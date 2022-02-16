@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Laura Mills Nelson
+	Date: January 30, 2020
+	Class: Interactive Web II, MART 232-90, SP 2020
+	Assignment: Course Management Website
+-->
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laura Mills Nelson - Projects</title>
+
+<!-- links stylesheet -->
+<link rel="stylesheet" href="styles.css" media="screen">
+
+
+<!-- links favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Code:700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet"> 
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="only screen and (max-width: 768px)">
+
+</head>
+<body>
+<div id="wrapper">
+
+<!-- Top Navigation Bar -->
+<div class="topnav">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	</a>
+
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+	<a class="home" href="index.html">HOME</a>
+	<a class="labs" href="labs.html">LABS</a>
+	<a class="projects active" href="projects.html">PROJECTS</a>
+  </div>
+
+</div>
+
+
+
+<header> <h1> Laura Mills Nelson </h1> </header>
+
+<!--	This section displays my navigation bar with links to 	the other pages on the website -->
+	
+	<nav>   
+		<ul>
+			<li><a class="home" href="index.html">HOME</a> </li>
+		    <li><a class="labs" href="labs.html">LABS</a> </li>
+		    <li><a class="projects active" href="projects.html">PROJECTS</a> </li>
+		</ul>
+	</nav>
+
+<img src="images/frost_1200x628.jpg" alt="Frost on Glass">
+
+	<main>
+		<h2> Projects </h2>
+
+		<h3>
+		<a class="hyperlink" href="projects/forever_friends_rescue/index.html" target="_blank">Project #1 - Forever Friends Rescue </a>
+		</h3>
+		<p>Our first project involved creating a website for a local animal shelter called Forever Friends Rescue. We were given images and text content from the client and had to communicate with the client regarding any content changes. We used Squarespace as our website builder. Click on the project title above to see more about this project. </p>
+
+		<div class="break"> </div>
+		
+	</main>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+
+<!--	
+	This section is the bottom of the page (footer) and uses a JavaScript snippet 
+	to auto update the copyright date.
+-->
+
+	<footer>
+
+	<h6 id="copyright">Copyright &copy; 
+	<script> document.write(new Date().getFullYear());
+	</script> 
+	Laura Mills Nelson &#124; All Rights Reserved 
+	</h6>
+	</footer>
+</div>
+
+<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+
+</body>
+</html>

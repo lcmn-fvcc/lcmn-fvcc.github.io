@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Laura Mills Nelson
+	Date: January 30, 2020
+	Class: Interactive Web II, MART 232-90, SP 2020
+	Assignment: Course Management Website
+-->
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laura Mills Nelson - Labs</title>
+
+<!-- links stylesheet -->
+<link rel="stylesheet" href="styles.css" media="screen">
+
+
+<!-- links favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Code:700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet"> 
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="only screen and (max-width: 768px)">
+
+</head>
+<body>
+<div id="wrapper">
+
+<!-- Top Navigation Bar -->
+<div class="topnav">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	</a>
+
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+	<a class="home" href="index.html">HOME</a>
+	<a class="labs active" href="labs.html">LABS</a>
+	<a class="projects" href="projects.html">PROJECTS</a>
+  </div>
+
+</div>
+
+
+
+<header> <h1> Laura Mills Nelson </h1> </header>
+
+<!--	This section displays my navigation bar with links to 	the other pages on the website -->
+	
+<nav>   
+	<ul>
+		<li><a class="home" href="index.html">HOME</a> </li>
+		<li><a class="labs active" href="labs.html">LABS</a> </li>
+		<li><a class="projects" href="projects.html">PROJECTS</a> </li>
+	</ul>
+</nav>
+
+<img src="images/breaking_ice_1200x629.jpg" alt="Breaking Ice Floe">
+
+<main>
+
+	<h2> Labs </h2>
+
+	<h3>Forms In Class Lab</h3>
+	<p>Our first lab involved creating an example of an HTML form. I created a <a class="hyperlink" href="labs/laura_survey.html" target="_blank">Produce Survey</a> (a survey about fresh fruits and vegetables). </p>
+
+	<div class="break"> </div>
+	
+	<h3><br>Chapter 9 Case Study</h3>
+	<p>Our second lab was the completion of the <a class="hyperlink" href="labs/pacific9/reservations.html" target="_blank">Chapter 9 Case Study</a>.
+	
+	<div class="break"> </div> 
+	
+	<h3><br>Web Hosting Research</h3>
+	<p>Our third lab involved researching web hosting options and creating a table comparing the various services. Here are my <a class="hyperlink" href="labs/web_hosting.html" target="_blank">Top 5 Web Hosting Services</a> that I would be interested in learning more about.
+	</p>
+	
+	<div class="break"> </div> 
+	
+	<h3><br>My WordPress Sandbox</h3>
+	<p>Our fourth lab involved playing around with the Twenty Twenty WordPress theme/template. Here is the link to <a class="hyperlink" href="http://lauram2.sgedu.site/" target="_blank">My WordPress Sandbox</a>.
+	</p>
+	
+	<div class="break"> </div> 
+	
+</main>
+	
+
+
+<!--	
+	This section is the bottom of the page (footer) and uses a JavaScript snippet 
+	to auto update the copyright date.
+-->
+
+	<footer>
+
+	<h6 id="copyright">Copyright &copy; 
+	<script> document.write(new Date().getFullYear());
+	</script> 
+	Laura Mills Nelson &#124; All Rights Reserved 
+	</h6>
+	</footer>
+</div>
+
+<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+
+</body>
+</html>

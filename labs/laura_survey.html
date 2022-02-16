@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<!-- Laura Mills Nelson
+	Forms in Class Lab
+	Interactive Web II, Mart 232_90, SP2020
+	February 6, 2020
+-->
+
+<html lang="en">
+	<head>
+	<title> Produce Survey </title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+	<style>
+	
+	body {
+		color: #FFFFFF;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.1em;
+		letter-spacing: 1px;
+		background-color: #302244;
+		margin: 3% 5% 3% 5%;
+	}
+	
+	h1 {
+		color: #FFFFFF;
+		text-align: center;
+		font-family: 'Love Ya Like A Sister', cursive;
+		font-size: 250%;
+		padding: 15px;
+		border: 10px solid;
+		border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+		border-image-slice: 1;
+		margin-bottom: 30px;
+	}
+	
+	input[type=text], select {
+		border-radius: 4px;
+	}
+	
+	textarea {
+		border-radius: 4px;
+	}
+	
+	input[type=submit], input[type=reset] {
+		border-radius: 4px;
+		margin: 10px;
+		padding: 5px;
+		font-weight: bold;
+	}
+	
+	</style>
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+	
+	</head>
+	<body>	
+	
+	<!-- Header -->
+	<h1> Produce Survey </h1>
+
+	<!-- Survey Form -->
+	<form name="Laura's Survey" method="post" action="demo.php">
+		
+	First Name: &nbsp; <input type="text" name="firstname">	
+	<br>
+	<br>
+	Last Name: &nbsp; <input type="text" name="lastname">
+	<br>
+	<br>
+	
+	<!--Checkboxes -->
+	Where do you buy your produce (fresh fruits and vegetables) when you are buying groceries? <br> Check each box that applies: <br><br>
+	
+		<input type="checkbox" name="Walmart" value="yes"> Walmart <br>
+		<input type="checkbox" name="Grocery Store" value="yes"> Grocery Store <br>
+		<input type="checkbox" name="Health Food Stores" value="yes"> "Health Food" Stores <br>
+		<input type="checkbox" name="Farmers Market" value="yes"> Farmers Market <br>
+		<input type="checkbox" name="CSA" value="yes"> CSA (Community Supported Agriculture) share <br>
+		<input type="checkbox" name="grow" value="yes"> I grow my own produce <br>
+		<input type="checkbox" name="Dont" value="yes"> I don't buy produce
+		<br>
+		<br>
+		
+	<!-- Radio buttons -->
+	Which type of diet do you primarily follow? <br> 
+	Choose one: <br><br>
+	<input type="radio" name="diet" value="Omnivore"> Omnivorous (I eat everything) <br>
+	<input type="radio" name="diet" value="Pescatarian"> Pescatarian <br>
+	<input type="radio" name="diet" value="Vegetarian"> Vegetarian <br>
+	<input type="radio" name="diet" value="Vegan"> Vegan <br>
+	<input type="radio" name="diet" value="Paleo"> Paleo <br>
+	<input type="radio" name="diet" value="Other"> Other (please describe in Comments)
+	<br>
+	<br>
+	
+	<!-- Text Area -->
+	
+	Comments: <br>
+	<textarea name="comments" cols="40" rows="5"></textarea>
+	
+	<br>	
+	<br>
+
+<!-- Select (drop down list) -->
+	Where did you grow up? <br>
+	<select name="place">
+		<option value="Montana">Montana</option>
+		<option value="Another State">Another State</option>
+		<option value="Outside of the Country">Outside of the USA</option>
+	</select>
+	
+	<br>
+	<br>
+	
+	<input type="submit">
+	<input type="reset">
+	
+	</form>
+	
+
+	</body>
+</html>
